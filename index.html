@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Los Santos</title>
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <div id="loading-screen">
+      <div class="loader-content">
+        <h1>LOADING...</h1>
+        <div class="bar-container">
+          <div class="bar"></div>
+        </div>
+        <p class="hint">"Respect is everything."</p>
+      </div>
+    </div>
+
+    <canvas id="webgl"></canvas>
+
+    <div class="ui-layer">
+      <header>
+        <h1 class="gta-font">LOS SANTOS</h1>
+        <h2 class="gta-font-sub">WEBGL EDITION</h2>
+      </header>
+
+      <nav class="menu">
+        <ul>
+          <li data-target="0">START GAME</li>
+          <li data-target="1">STATS</li>
+          <li data-target="2">AUDIO</li>
+          <li data-target="3">QUIT</li>
+        </ul>
+      </nav>
+
+      <div class="mission-marker">
+        <div class="arrow"></div>
+        <div class="cylinder"></div>
+      </div>
+
+      <div class="hud">
+        <div class="weapon-icon">🔫</div>
+        <div class="time">16:20</div>
+        <div class="money">$350,000</div>
+      </div>
+
+      <div class="vinyl-player">
+        <button id="play-btn">▶ RADIO LOS SANTOS</button>
+        <div class="vinyl-disk"></div>
+      </div>
+    </div>
+
+    <div class="vignette"></div>
+    <div class="scanlines"></div>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
